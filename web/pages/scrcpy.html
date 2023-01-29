@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appeel</title>
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/boxicons/css/boxicons.css">
+
+    <script src="../assets/js/jquery.js"></script>
+    <script type="text/javascript" src="/eel.js"></script>
+
+</head>
+
+<body>
+    <section class="container"> 
+        <div class="phone" class="phone">
+            <div class="tela">
+                <div>
+                    <h1>netools</h1>
+                </div>
+                <div>
+                    <button title="conectar ao celular" onclick="startDevices()">
+                        <i class="bx bx-wifi" title="conectar"></i>
+                    </button>
+                </div>
+            </div>
+
+            <img src="./images/">
+        </div>
+        <div>
+            <h1>Sistema de controle de celular</h1>
+            <label for="menu">Controle via WIFI</label><br><br>
+            <input
+                type="text"
+                pattern="[0-9.]*"
+                placeholder=" 0 . 0 . 0 . 0"
+                id="meuip"
+            ><br>
+            <button id="tcpip" onclick="wifiConnect()">Connectar</button>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="../app.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>    
+
+    <script type="text/javascript" src="../assets/js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".phone"), {
+            max: 25,
+            speed: 400
+        });
+        
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".phone"));
+    </script>
+
+</body>
+
+</html>
